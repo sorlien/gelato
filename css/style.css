@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 } 
 ol, ul {
 	list-style: none;
@@ -47,7 +47,9 @@ table {
 /* End of global reset */
 body {
   overflow-x: hidden;
+  background-color: #1c1c1c;
 }
+
 
 header {
   background-color:#1c1c1c;
@@ -68,13 +70,16 @@ div.intro {
 
 #header-title {
   /* position: relative; */
-  font-family: 'Pacifico', cursive;
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Josefin Sans', sans-serif;
+
   font-size: 5em;
   color: #fff;
 }
 
 h1 {
-  font-family: 'Muli', sans-serif;
+  /* font-family: 'Muli', sans-serif; */
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 2.5em;
   color: #f4cc5a;
   margin:10% 0 1% 0;
@@ -95,35 +100,40 @@ margin: 5% 5%;
   width:90vw;
   height:auto;
 }
-/* 
 
-p {
-  font-family: 'Muli', sans-serif;
-}
-.container a {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  color: #1abc9c;
-  text-decoration: none;
-  font-size: 20px;
-  overflow: hidden;
-  top: 5px;
-}
-.container a:after {
-  content: '';
+/* Scroller indicator */
+.scroll-downs {
   position: absolute;
-  background: #1abc9c;
-  height: 2px;
-  width: 0%;
-  transform: translateX(-50%);
-  left: 50%;
-  bottom: 0;
-  transition: .35s ease;
+  top: 85vh;
+  left: 50vw;
+  margin: auto;
 }
-.container a:hover:after, .container a:focus:after, .container a:active:after {
-  width: 100%;
-} */
+.mousey {
+  width: 2px;
+  padding: 7px 10px;
+  height: 25px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+/* Hamburger menu */
 
 .button_container {
   position: fixed;
@@ -205,7 +215,8 @@ p {
   top: 50%;
   transform: translateY(-50%);
   font-size: 30px;
-  font-family: 'Heebo', sans-serif;
+  /* font-family: 'Heebo', sans-serif; */
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   text-align: center;
 }
