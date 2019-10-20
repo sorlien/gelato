@@ -45,16 +45,37 @@ table {
 }
 
 /* End of global reset */
-body {
-  overflow-x: hidden;
+html, body {
+  box-sizing: border-box;
   background-color: #1c1c1c;
 }
-
-header {
-  background-color:#1c1c1c;
-  height: 100vh;
-  width: 100vw;
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin-bottom: 6em;
 }
+
+section { 
+  margin: 100vh 7em 2em 7em;
+  z-index:1;
+}
+
+footer {
+  width: 100%;
+  height: 3em;
+  background-color:#1c1c1c;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+footer p {
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+}
+
 
 .logo { 
   position: fixed;
@@ -63,12 +84,11 @@ header {
 }
 
 div.intro { 
-  padding: 40vh 0 0 5vw;
+  padding: 40vh 0 0 0;
+  text-align: center;
 }
 
-#header-title {
-  /* position: relative; */
-  /* font-family: 'Raleway', sans-serif; */
+#intro-text {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 5em;
   color: #fff;
@@ -95,14 +115,11 @@ p {
   line-height: 1.5em;
 }
 
-section {
-margin: 5% 5%;
-}
-
 .work img {
   width:90vw;
   height:auto;
 }
+
 
 /* Links */
 a:link, a:visited {
@@ -120,9 +137,10 @@ a:hover, a:active {
 /* Scroller indicator */
 .scroll-downs {
   position: absolute;
-  top: 85vh;
+  bottom: 3vh;
   left: 50vw;
   margin: auto;
+  z-index: 1;
 }
 .mousey {
   width: 2px;
@@ -197,7 +215,7 @@ a:hover, a:active {
 
 .overlay {
   position: fixed;
-  background: #303030;
+  background: #1c1c1c;
   top: 0;
   left: 0;
   width: 100%;
@@ -228,7 +246,7 @@ a:hover, a:active {
 .overlay nav {
   position: relative;
   height: 70%;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   font-size: 30px;
   /* font-family: 'Heebo', sans-serif; */
@@ -302,6 +320,7 @@ a:hover, a:active {
     height:auto;
     margin-right:8%;
   }
+
   .work .img-right {
     float: right;
     max-width:55%;
@@ -309,6 +328,16 @@ a:hover, a:active {
     margin-left:8%;
   }
   
+  .work #korpen-img {
+    float: right;
+    max-width:45%;
+    height:auto;
+  }
+  .work #truck-img {
+    float: right;
+    max-width:50%;
+    height:auto;
+  }
   .row {
     /* border: 1px red solid; */
     margin-bottom:10%;
@@ -319,6 +348,5 @@ a:hover, a:active {
     clear: both;
     display: table;
   }
-
 
 }
