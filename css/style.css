@@ -58,6 +58,7 @@ body {
 section { 
   margin: 100vh 7em 2em 7em;
   z-index:1;
+  border:1px solid blue;
 }
 
 footer {
@@ -83,9 +84,10 @@ footer p {
   left: 2%;
 }
 
-div.intro { 
+.intro { 
   padding: 40vh 0 0 0;
   text-align: center;
+  border:1px solid green;
 }
 
 #intro-text {
@@ -141,6 +143,7 @@ a:hover, a:active {
   left: 50vw;
   margin: auto;
   z-index: 1;
+  border:1pc red solid;
 }
 .mousey {
   width: 2px;

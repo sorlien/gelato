@@ -292,8 +292,8 @@ a:hover, a:active {
   height:auto;
 }
 
-@media only screen and (max-width: 1000px) {
-  /* styles for browsers smaller than 1000px; */
+@media only screen and (max-width: 1024px) {
+  /* styles for browsers smaller than 1024px(ipad pro); */
     /* Image Grid system */
   .image-grid {
     margin-top: 5em;
@@ -308,8 +308,8 @@ a:hover, a:active {
   }  
 }
  
-@media only screen and (max-width: 800px) {
-  /* styles for browsers smaller than 1000px; */
+@media only screen and (max-width: 768px) {
+  /* styles for browsers smaller than 768px(ipad); */
     /* Image Grid system */
   .image-grid {
     margin-top: 2em;
@@ -333,10 +333,44 @@ a:hover, a:active {
   .image .portrait {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 70%;
     display: block;
   }
   section { 
-    margin-top: 5em;
+    margin-top: 1.5em;
+  }
+}
+
+ 
+@media only screen and (max-width: 570px) {
+  /* styles for browsers smaller than 570px(ipad); */
+    /* Image Grid system */
+  .image-grid {
+    margin-top: 2em;
+    height: 100%;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto;
+  }   
+  .about-container {
+    height: 100%;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "i"
+    "c"
+    ;
+  }
+  .image .portrait {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: block;
+  }
+  section { 
+    margin: 1em 4em;
   }
 }
