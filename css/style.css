@@ -85,7 +85,7 @@ footer {
 }
 
 footer p {
-  font-size: 1vw;
+  font-size: 70%;
   color: #fff;
   text-align: center;
 }
@@ -102,16 +102,21 @@ footer p {
 
 h2 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 3vw;
+  font-size: 170%;
   color: white;
   margin: 0 0 1.5% 0;
   }
 
 p {
   font-family: 'Muli', sans-serif;
-  font-size: 1.5vw;
+  font-size: 110%;
   color: #c4c4c4;
   line-height: 1.5em;
+  margin-bottom:3%;
+}
+
+.intro p { 
+  padding: 0 5%;
 }
 
 .work img {
@@ -125,7 +130,7 @@ a:link, a:visited {
   font-family: 'Muli', sans-serif;
   color:white;
   text-transform: uppercase;
-  font-size: 1.5vw;
+  font-size: 90%;
 
 }
 
@@ -145,16 +150,15 @@ a:hover, a:active {
 .mousey {
   width: 0.4vw;
   padding: 7px 10px;
-  height: 5vh;
+  height: 25px;
   border: 0.15vw solid #fff;
   border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
 }
 .scroller {
-  width: 0.1vw;
+  width: 0.2vw;
   height: 0.7vh;
-  padding-left:0.15vw;
   border-radius: 25%;
   background-color: #fff;
   animation-name: scroll;
@@ -291,7 +295,7 @@ a:hover, a:active {
   height: 70%;
   top: 60%;
   transform: translateY(-50%);
-  font-size: 3vw;
+  font-size: 140%;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   text-align: center;
@@ -330,7 +334,7 @@ a:hover, a:active {
   left: 50%;
   width: 0%;
   transform: translateX(-50%);
-  height: 3px;
+  height: 1px;
   background: #FFF;
   transition: .35s;
 }
