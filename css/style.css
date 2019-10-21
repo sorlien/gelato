@@ -55,10 +55,23 @@ body {
   margin-bottom: 6em;
 }
 
+.intro { 
+  width:100vw;
+  height: 100vh;
+  text-align: center;
+  z-index: -1;
+}
+
+#intro-text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 6vw;
+  color: #fff;
+  padding-top:40vh
+}
+
 section { 
-  margin: 100vh 7em 2em 7em;
+  margin: 0vh 10vw 2vw 10vw;
   z-index:1;
-  border:1px solid blue;
 }
 
 footer {
@@ -72,28 +85,15 @@ footer {
 }
 
 footer p {
-  font-size: 1em;
+  font-size: 1vw;
   color: #fff;
   text-align: center;
 }
-
 
 .logo { 
   position: fixed;
   top: 4%;
   left: 2%;
-}
-
-.intro { 
-  padding: 40vh 0 0 0;
-  text-align: center;
-  border:1px solid green;
-}
-
-#intro-text {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 5em;
-  color: #fff;
 }
 
 .container { 
@@ -103,7 +103,7 @@ footer p {
 h2 {
   /* font-family: 'Muli', sans-serif; */
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 2.5em;
+  font-size: 3vw;
   color: white;
   margin: 0 0 1.5% 0;
   /* color: #f4cc5a; */
@@ -112,7 +112,7 @@ h2 {
 
 p {
   font-family: 'Muli', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.5vw;
   color: #c4c4c4;
   line-height: 1.5em;
 }
@@ -142,8 +142,7 @@ a:hover, a:active {
   bottom: 3vh;
   left: 50vw;
   margin: auto;
-  z-index: 1;
-  border:1pc red solid;
+  z-index: 0;
 }
 .mousey {
   width: 2px;
@@ -168,6 +167,47 @@ a:hover, a:active {
   0% { opacity: 0; }
   10% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(15px); opacity: 0;}
+}
+
+
+/* Grid for projects */
+
+.box {
+  margin:0 0 1em 0;
+}
+
+.b #korpen-img {
+  max-width:70%;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4em;
+}
+
+.d #gelato {
+  max-width:100%;
+  height:auto;
+  order:1;
+  margin-bottom: 4em;
+}
+
+.f #truck-img{  
+  max-width:80%;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4em;
+}
+
+.h #solarcell{  
+  max-width:95%;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4em;
 }
 
 /* Hamburger menu */
@@ -232,6 +272,7 @@ a:hover, a:active {
   opacity: 1;
   visibility: visible;
   height: 100%;
+  z-index: 10;
 }
 .overlay.open li {
   animation: fadeInRight .5s ease forwards;
@@ -251,11 +292,11 @@ a:hover, a:active {
   height: 70%;
   top: 60%;
   transform: translateY(-50%);
-  font-size: 30px;
-  /* font-family: 'Heebo', sans-serif; */
+  font-size: 3vw;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   text-align: center;
+
 }
 .overlay ul {
   list-style: none;
@@ -308,48 +349,62 @@ a:hover, a:active {
 
 
 /* Grid system */
-
 @media only screen and (min-width: 960px) {
-  /* styles for browsers larger than 960px; */
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .work .img-left {
-    float: left;
-    max-width:55%;
-    height:auto;
-    margin-right:8%;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
   }
 
-  .work .img-right {
-    float: right;
-    max-width:55%;
-    height:auto;
-    margin-left:8%;
-  }
-  
-  .work #korpen-img {
-    float: right;
-    max-width:45%;
-    height:auto;
-  }
-  .work #truck-img {
-    float: right;
-    max-width:50%;
-    height:auto;
-  }
-  .row {
-    /* border: 1px red solid; */
-    margin-bottom:10%;
-  }
-  
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  .box {
+    margin:0 0 5em 0;
   }
 
+  .b #korpen-img {
+    max-width:70%;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .c {
+    order: 2;
+  }
+
+  .d #gelato {
+    max-width:100%;
+    height:auto;
+    order:1;
+  }
+  .e {
+    order: 3;
+    padding-top:7vh;
+  }
+  .f {    
+    order: 4;
+  }
+  .f #truck-img{  
+    max-width:80%;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .g {
+    order: 6;
+  }
+  .h {
+    order: 5;
+  }
+
+  .h #solarcell{  
+    max-width:95%;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
