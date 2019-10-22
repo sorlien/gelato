@@ -24,3 +24,7 @@ $('#overlay li').on('click', function(){
 //           });
 //       });
 //   })(jQuery);
+
+AOS.init({
+  once: true
+})

@@ -76,7 +76,7 @@ body {
   }
 
   .intro-text.delayed {
-    animation-delay: 1.4s;
+    animation-delay: 0.8s;
     font-family: 'Muli', sans-serif;
     font-size: 110%;
     color: #c4c4c4;
