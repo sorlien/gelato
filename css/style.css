@@ -62,12 +62,27 @@ body {
   z-index: -1;
 }
 
-#intro-text {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 12vw;
-  color: #fff;
-  padding-top:40vh
-}
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.intro-text {
+   opacity:0;  /* make things invisible upon start */
+   animation:fadeIn ease-in 1;
+   animation-fill-mode:forwards;
+   animation-duration:1.4s;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 500%;
+   color: #fff;
+   padding-top:40vh
+  }
+
+  .intro-text.delayed {
+    animation-delay: 1.4s;
+    font-family: 'Muli', sans-serif;
+    font-size: 110%;
+    color: #c4c4c4;
+    line-height: 1.5em;
+    margin-bottom:3%;
+  }
 
 section { 
   margin: 0vh 10vw 2vw 10vw;
