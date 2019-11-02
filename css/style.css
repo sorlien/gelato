@@ -145,7 +145,6 @@ p {
   height:auto;
 }
 
-
 /* Links */
 a:link, a:visited {
   font-family: 'Muli', sans-serif;
@@ -391,10 +390,6 @@ a:hover, a:active {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
-
-  /* .box {
-    border: 1px solid red;
-  } */
 
   .b #korpen-img {
     max-width:70%;
