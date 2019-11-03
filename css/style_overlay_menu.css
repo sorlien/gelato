@@ -95,6 +95,13 @@ h2 {
    margin: 0 0 1.5% 0;
 }
 
+h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 130%;
+  color: white;
+   margin: 0 0 1.5% 0;
+}
+
 p {
   font-family: 'Muli', sans-serif;
   font-size: 110%;
