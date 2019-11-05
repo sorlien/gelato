@@ -195,7 +195,7 @@ a:hover, a:active {
 .button_container span {
   background: #FFF;
   border: none;
-  height: 5px;
+  height: 0.2vw; /*Tjocklek på streck*/
   width: 100%;
   position: absolute;
   top: 0;
@@ -226,6 +226,7 @@ a:hover, a:active {
   opacity: 1;
   visibility: visible;
   height: 100%;
+  z-index: 10;
 }
 .overlay.open li {
   animation: fadeInRight .5s ease forwards;
@@ -245,11 +246,11 @@ a:hover, a:active {
   height: 70%;
   top: 60%;
   transform: translateY(-50%);
-  font-size: 30px;
-  /* font-family: 'Heebo', sans-serif; */
+  font-size: 140%;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   text-align: center;
+
 }
 .overlay ul {
   list-style: none;
@@ -284,7 +285,7 @@ a:hover, a:active {
   left: 50%;
   width: 0%;
   transform: translateX(-50%);
-  height: 3px;
+  height: 1px;
   background: #FFF;
   transition: .35s;
 }
@@ -299,6 +300,7 @@ a:hover, a:active {
     left: 0;
   }
 }
+
 
 /* About Grid system */
 .about-container {
