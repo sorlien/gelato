@@ -267,7 +267,7 @@ a:hover, a:active {
 .button_container span {
   background: #FFF;
   border: none;
-  height: 0.2vw; /*Tjocklek på streck*/
+  height: 2px; /*Tjocklek på streck*/
   width: 100%;
   position: absolute;
   top: 0;
