@@ -164,6 +164,127 @@ a:hover, a:active {
   text-transform: uppercase;
 }
 
+/*Contact page*/
+
+p.formfont {
+  margin-bottom:0%;
+  line-height: 1.5em;
+}
+
+.title {
+  text-align: center;
+}
+
+#feedback-page{
+  text-align:center;
+}
+
+#form-main{
+  width:100%;
+  float:left;
+  padding-top:0px;
+}
+
+#form-div {
+  background: #fff;
+  padding-left:35px;
+  padding-right:35px;
+  padding-top:35px;
+  padding-bottom:35px;
+  width: 450px;
+  float: left;
+  left: 50%;
+  position: absolute;
+margin-top:30px;
+  margin-left: -260px;
+}
+
+.feedback-input {
+  color:#000;
+  font-family: Montserrat, Arial, sans-serif;
+font-weight:300;
+  font-size: 14px;
+  border-radius: 0;
+  line-height: 12px;
+  background-color: #fff;
+  padding:13px 13px 13px 3px;
+  margin-bottom: 10px;
+  width:100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+border: 0px solid transparent;
+border-bottom: 1px solid #000;
+}
+
+.feedback-input:focus{
+  background: #fff;
+  box-shadow: 0;
+  color: #000;
+  outline: none;
+padding: 13px 13px 13px 13px;
+}
+
+.focused{
+  color:#000;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  background-color:white;
+}
+
+#send-button{
+  font-family: 'Muli', sans-serif;;
+  float:left;
+  width: 100%;
+  border: 0px solid transparent;
+  cursor:pointer;
+  background-color: #000;
+  color:white;
+  font-size:18px;
+  padding-top:18px;
+  padding-bottom:18px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+margin-top:-4px;
+font-weight:300;
+}
+
+#send-button:hover{
+  background-color: #fff;
+  color: #000;
+border: 1px solid #000;
+}
+  
+  
+.ease {
+  width: 0px;
+  height: 74px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.submit:hover .ease{
+width:100%;
+background-color:white;
+}
+
+
+
 /* Hamburger menu */
 
 .button_container {
@@ -401,6 +522,7 @@ a:hover, a:active {
  
 @media only screen and (max-width: 570px) {
   /* styles for browsers smaller than 570px(ipad); */
+
     /* Image Grid system */
   .image-grid {
     margin-top: 2em;
