@@ -155,6 +155,7 @@ a:link, a:visited {
   font-family: 'Muli', sans-serif;
   color:white;
   text-transform: uppercase;
+  font-size: 90%;
 
 }
 
@@ -392,7 +393,7 @@ background-color:white;
 .overlay ul li a {
   display:"";
   position: relative;
-  color: #f4cc5a;
+  color: #fff;
   text-decoration: none;
   overflow: hidden;
 }
@@ -407,7 +408,7 @@ background-color:white;
   width: 0%;
   transform: translateX(-50%);
   height: 1px;
-  background: #FFF;
+  background: #f4cc5a;
   transition: .35s;
 }
 

@@ -342,7 +342,7 @@ a:hover, a:active {
 .overlay ul li a {
   display:"";
   position: relative;
-  color: #f4cc5a;
+  color: #fff;
   text-decoration: none;
   overflow: hidden;
 }
@@ -357,7 +357,7 @@ a:hover, a:active {
   width: 0%;
   transform: translateX(-50%);
   height: 1px;
-  background: #FFF;
+  background: #f4cc5a;
   transition: .35s;
 }
 
