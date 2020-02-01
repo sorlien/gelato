@@ -118,6 +118,13 @@ p.date {
   margin-top: -2%;
 }
 
+p.calculations {
+  font-weight: bold;
+  font-size: 125%;
+  text-align: center;
+  color:white;
+}
+
 figure {
   margin-top: 7%;
 }
