@@ -201,7 +201,7 @@ a:hover, a:active {
   margin:0 0 1em 0;
 }
 
-.b #korpen-img {
+.b #clima-img {
   max-width:70%;
   height:auto;
   display: block;
@@ -390,7 +390,7 @@ a:hover, a:active {
     grid-gap: 20px;
   }
 
-  .b #korpen-img {
+  .b #clima-img {
     max-width:70%;
     height:auto;
     display: block;
