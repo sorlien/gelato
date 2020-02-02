@@ -1,36 +1,13 @@
-// Hamburger menu
+window.onscroll = function() {scrollFunction()};
 
-$('#toggle').click(function() {
-  $(this).toggleClass('active');
-  $('#overlay').toggleClass('open').show();
-});
+function scrollFunction() {
+  if (document.body.scrollTop > 320 || document.documentElement.scrollTop > 320) {
+    document.getElementById("navbar").style.backgroundColor = "#fbf4f5";
+    document.getElementById("navbar").style.boxShadow = "0 0 .5em rgba(0, 0, 0, .5)";
 
-$('#overlay li').on('click', function(){
-  $('#overlay').hide();
-  $('#overlay').toggleClass('open');
-  $('#toggle').removeClass("active");
-});
+  } else {
+    document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,0)";
+    document.getElementById("navbar").style.boxShadow = "0 0 0 rgba(0, 0, 0, 0)";
 
-//Fade in 
-AOS.init({
-  once: true
-})
-
-
-//Scroll to link
-
-$(document).ready(function() {
-  $('html, body').hide();
-
-  if (window.location.hash) {
-      setTimeout(function() {
-          $('html, body').scrollTop(0).show();
-          $('html, body').animate({
-              scrollTop: $(window.location.hash).offset().top
-              }, 800)
-      }, 0);
   }
-  else {
-      $('html, body').show();
-  }
-});
+}
